@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/wubishetD/project3-mock-server/issues"
   },
-  "homepage": "https://github.com/wubishetD/project3-mock-server#readme"
+  "homepage": "https://github.com/wubishetD/project3-mock-server#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
 }
