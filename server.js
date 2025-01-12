@@ -1,21 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const loginRoutes = require('./routes/loginRoutes');
 const app = express();
-const PORT = 3000;
+const PORT = 5001;
 
-app.use(cors());
+// Middleware
 app.use(bodyParser.json());
+app.use(cors());
 
-// Example Mock Endpoints
-app.get('/api/providers', (req, res) => {
-    res.json([
-        { id: 1, name: 'Provider One', email: 'provider1@example.com' },
-        { id: 2, name: 'Provider Two', email: 'provider2@example.com' }
-    ]);
-});
+// Routes
+app.use('/api', loginRoutes);
 
+// Start the server
 app.listen(PORT, () => {
-    console.log(`Mock server running at http://localhost:${PORT}`);
+  console.log(`Mock server running at http://localhost:${PORT}`);
 });
