@@ -1,0 +1,21 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "This project is a mock server built using Express.js to simulate API endpoints for Project 3: Access Platform for Providers. It is designed to enable testing and validation of API interactions without relying on the actual backend implementation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wubishetD/project3-mock-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wubishetD/project3-mock-server/issues"
+  },
+  "homepage": "https://github.com/wubishetD/project3-mock-server#readme"
+}
